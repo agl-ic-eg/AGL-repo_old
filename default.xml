@@ -10,6 +10,7 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
   <remote name="github" fetch="https://github.com/" />
   <remote name="openembedded" fetch="https://git.openembedded.org/" />
+  <remote name="iceg" fetch="https://github.com/agl-ic-eg/" />
 
   <!-- defaults -->
   <default remote="agl" sync-j="4" revision="master"/>
@@ -19,9 +20,11 @@
   <!-- use agl revisions/branches here -->
 
   <!-- AGL things. -->
-  <project name="AGL/meta-agl" path="meta-agl" />
+  <!-- <project name="AGL/meta-agl" path="meta-agl" /> -->
+  <project name="meta-agl" path="meta-agl" remote="iceg" revision="dev-r3" upstream="dev-r3" />
   <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
-  <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
+  <!-- <project name="AGL/meta-agl-devel" path="meta-agl-devel" /> -->
+  <project name="meta-agl-devel" path="meta-agl-devel" remote="iceg" revision="dev-r3" upstream="dev-r3" />
 
 
   <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
