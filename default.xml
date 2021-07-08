@@ -21,11 +21,11 @@
 
   <!-- AGL things. -->
   <!-- <project name="AGL/meta-agl" path="meta-agl" /> -->
-  <project name="meta-agl" path="meta-agl" remote="iceg" revision="dev-r4" upstream="dev-r4" />
+  <project name="meta-agl" path="meta-agl" remote="iceg" revision="dev-r5" upstream="dev-r5" />
    <!-- <project name="AGL/meta-agl-demo" path="meta-agl-demo" /> -->
-  <project name="meta-agl-demo" path="meta-agl-demo" remote="iceg" revision="dev-r4" upstream="dev-r4" />
+  <project name="meta-agl-demo" path="meta-agl-demo" remote="iceg" revision="dev-r5" upstream="dev-r5" />
   <!-- <project name="AGL/meta-agl-devel" path="meta-agl-devel" /> -->
-  <project name="meta-agl-devel" path="meta-agl-devel" remote="iceg" revision="dev-r4" upstream="dev-r4" />
+  <project name="meta-agl-devel" path="meta-agl-devel" remote="iceg" revision="dev-r5" upstream="dev-r5" />
 
 
   <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
