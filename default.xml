@@ -33,15 +33,15 @@
   <!-- YOCTO & OE -->
 
   <!-- Yocto/OpenEmbedded things. -->
-  <project name="poky" path="external/poky" remote="yocto" revision="6ebb33bdaccaeadff0c85aab27acf35723df00d8" upstream="dunfell" />
+  <project name="poky" path="external/poky" remote="yocto" revision="9c2186108e2e8fcf5837c0ffe9dbdeeaea4b7398" upstream="dunfell" />
   <project name="meta-gplv2" path="external/meta-gplv2" remote="yocto" revision="60b251c25ba87e946a0ca4cdc8d17b1cb09292ac" upstream="dunfell" />
-  <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="11eae114522a6befa06c7f4021a83bc016133543" upstream="dunfell" />
+  <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="5c347d8ce425dcb4896e6f873810b8bfff5e4e92" upstream="dunfell" />
 
 
   <!-- UPSTREAM COMPONENTS -->
 
   <!-- meta-virtualization -->
-  <project name="meta-virtualization" path="external/meta-virtualization" remote="yocto" revision="8be0bc1480e649b2df5f9f8e87e01c5acbe61182" upstream="dunfell"/>
+  <project name="meta-virtualization" path="external/meta-virtualization" remote="yocto" revision="bf2930c69b163af0ece08cae2649afffa5b3e810" upstream="dunfell"/>
 
   <!-- Qt things -->
   <project name="meta-qt5/meta-qt5" path="external/meta-qt5" remote="github" revision="b4d24d70aca75791902df5cd59a4f4a54aa4a125" upstream="dunfell"/>
@@ -61,7 +61,7 @@
   <project name="meta-spdxscanner" path="external/meta-spdxscanner" remote="yocto" revision="23bba6f8dfafc806c187fc58b31fe2466d95772d" upstream="dunfell"/>
 
   <!-- Alexa Auto SDK layer -->
-  <project name="alexa/alexa-auto-sdk" path="external/alexa-auto-sdk" remote="github" revision="d46f22b453f528868b483e39bc7a057ca68a5199" upstream="2.3"/>
+  <project name="alexa/alexa-auto-sdk" path="external/alexa-auto-sdk" remote="github" revision="e1564482a33648bede36740796c8d69ae3c6f7fb" upstream="2.3"/>
 
   <!-- IoT SDK layer -->
   <project name="intel-iot-devkit/meta-iot-cloud" path="external/meta-iot-cloud" remote="github" revision="5431f91969087d631972d73cd03b16eed0a61987" upstream="dunfell"/>
@@ -70,7 +70,10 @@
   <project name="kraj/meta-clang" path="external/meta-clang" remote="github" revision="e63d6f9abba5348e2183089d6ef5ea384d7ae8d8" upstream="dunfell"/>
 
   <!-- meta-python2 as stop-gap to allow chromium to build until upstream fixes the dependencies -->
-  <project name="meta-python2" path="external/meta-python2" remote="openembedded" revision="6b3000729ce3424c2aa8a03cd46ef37b200d2fc1" upstream="dunfell" />
+  <project name="meta-python2" path="external/meta-python2" remote="openembedded" revision="b901080cf57d9a7f5476ab4d96e56c30db8170a8" upstream="dunfell" />
+
+  <!-- meta-ros layer -->
+  <project name="ros/meta-ros" path="external/meta-ros" remote="github" revision="7ded597103e8e54ffa979d042cdbbedb76ff7cb5" upstream="dunfell"/>
 
   <!-- BSPs -->
 
@@ -88,13 +91,13 @@
   <project name="meta-ti" path="bsp/meta-ti" remote="yocto" revision="02a53f48b9bdb242185204610610f2209bc92ca6" upstream="dunfell"/>
 
   <!-- Raspberry Pi 3, 3B+, and 4 -->
-  <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="77190af02d48adc2b28216775e6318e9eeda571c" upstream="dunfell"/>
+  <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="f0c75016f06c0395d1e76fde0ef1beb71eaf404a" upstream="dunfell"/>
 
   <!-- DragonBoard 410c specific things -->
   <project name="meta-qcom" path="bsp/meta-qcom" remote="yocto" revision="2778e164cd0427277e37fc03c8ed19179da1613b" upstream="dunfell"/>
 
   <!-- Sancloud BSP layers -->
-  <project name="SanCloudLtd/meta-sancloud" path="bsp/meta-sancloud" remote="github" revision="586fb69bb95a80d3b84c1dd1d5a892f7d078bd7b" upstream="dunfell"/>
+  <project name="SanCloudLtd/meta-sancloud" path="bsp/meta-sancloud" remote="github" revision="e220d23c2c01ca18161d3fb0486f295e6e90ba03" upstream="dunfell"/>
   <project name="EmbeddedAndroid/meta-rtlwifi" path="bsp/meta-rtlwifi" remote="github" revision="7b556aa2265cfc41e6e5fda7085619436fe9a385" upstream="dunfell"/>
 
   <!-- meta-synopsys - support for ARC HSDK board -->

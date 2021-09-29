@@ -69,6 +69,9 @@
   <!-- meta-python2 as stop-gap to allow chromium to build until upstream fixes the dependencies -->
   <project name="meta-python2" path="external/meta-python2" remote="openembedded" revision="dunfell" />
 
+  <!-- meta-ros layer -->
+  <project name="ros/meta-ros" path="external/meta-ros" remote="github" upstream="dunfell"/>
+
   <!-- BSPs -->
 
   <!-- Renesas Gen3 specific things -->
