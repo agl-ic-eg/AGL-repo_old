@@ -22,7 +22,7 @@
   <!-- AGL things. -->
   <project name="AGL/meta-agl" path="meta-agl" />
   <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
-  <project name="meta-agl-devel" remote="iceg" revision="ic-service-dev" path="meta-agl-devel" />
+  <project name="meta-agl-devel" remote="iceg" revision="ic-service-dev-r2" path="meta-agl-devel" />
 
 
   <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
