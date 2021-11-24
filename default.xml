@@ -30,7 +30,7 @@
   <!-- YOCTO & OE -->
 
   <!-- Yocto/OpenEmbedded things. -->
-  <project name="poky" path="external/poky" remote="yocto" revision="74b22db6879b388d700f61e08cb3f239cf940d18" upstream="dunfell" />
+  <project name="poky" path="external/poky" remote="yocto" revision="0810ac6b926cd901f0619e95f367efc79d4c3159" upstream="dunfell" />
   <project name="meta-gplv2" path="external/meta-gplv2" remote="yocto" revision="60b251c25ba87e946a0ca4cdc8d17b1cb09292ac" upstream="dunfell" />
   <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="3cf22d15885cf0e3e16078705e9a20f3d21f12db" upstream="dunfell" />
 
@@ -72,8 +72,8 @@
   <!-- BSPs -->
 
   <!-- Renesas Gen3 specific things -->
-  <project name="renesas-rcar/meta-renesas" path="bsp/meta-renesas" remote="github" revision="c0a59569d52e32c26de083597308e7bc189675dd" upstream="dunfell-dev"/>
-  <project name="CogentEmbedded/meta-rcar" path="bsp/meta-rcar" remote="github" revision="a99eb54e9b068375b306fec53f1530f7eb780014" upstream="v4.7.0"/>
+  <project name="renesas-rcar/meta-renesas" path="bsp/meta-renesas" remote="github" revision="0fe77668f5d9a31a5d10449988c3d8fb8dc475c5" upstream="dunfell"/>
+  <project name="CogentEmbedded/meta-rcar" path="bsp/meta-rcar" remote="github" revision="da3177eca5e831f4cab15d51b4a7d3317f786a91" upstream="v5.5.0"/>
   <project name="AGL/meta-agl-refhw" path="bsp/meta-agl-refhw" />
 
   <!-- consolidate on meta-freescale from git.yoctoproject.org -->
