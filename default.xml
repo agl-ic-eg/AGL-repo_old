@@ -24,6 +24,7 @@
   <project name="meta-agl-demo" remote="iceg" path="meta-agl-demo" revision="main" />
   <project name="meta-agl-devel" remote="iceg" path="meta-agl-devel" revision="main" />
 
+  <project name="meta-agl-demo-ces2023" remote="iceg" path="meta-agl-demo-ces2023" revision="main" />
 
   <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
 
