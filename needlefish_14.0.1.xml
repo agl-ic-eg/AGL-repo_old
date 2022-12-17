@@ -10,35 +10,33 @@
   <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
   <remote name="github" fetch="https://github.com/" />
   <remote name="openembedded" fetch="https://git.openembedded.org/" />
-  <remote name="iceg" fetch="https://github.com/agl-ic-eg/" />
 
   <!-- defaults -->
-  <default remote="agl" sync-j="4" revision="master"/>
+  <default remote="agl" sync-j="4" revision="refs/tags/needlefish/14.0.1"/>
 
 
   <!-- CORE -->
   <!-- use agl revisions/branches here -->
 
   <!-- AGL things. -->
-  <project name="meta-agl" remote="iceg" path="meta-agl" revision="main" />
-  <project name="meta-agl-demo" remote="iceg" path="meta-agl-demo" revision="main" />
-  <project name="meta-agl-devel" remote="iceg" path="meta-agl-devel" revision="main" />
+  <project name="AGL/meta-agl" path="meta-agl" />
+  <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
+  <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
 
-  <project name="meta-agl-demo-ces2023" remote="iceg" path="meta-agl-demo-ces2023" revision="main" />
 
   <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
 
   <!-- YOCTO & OE -->
 
   <!-- Yocto/OpenEmbedded things. -->
-  <project name="poky" path="external/poky" remote="yocto" revision="2e79b199114b25d81bfaa029ccfb17676946d20d" upstream="kirkstone" />
-  <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="50d4a8d2a983a68383ef1ffec2c8e21adf0c1a79" upstream="kirkstone" />
+  <project name="poky" path="external/poky" remote="yocto" revision="387ab5f18b17c3af3e9e30dc58584641a70f359f" upstream="kirkstone" />
+  <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="acbe74879807fc6f82b62525d32c823899e19036" upstream="kirkstone" />
 
 
   <!-- UPSTREAM COMPONENTS -->
 
   <!-- meta-virtualization -->
-  <project name="meta-virtualization" path="external/meta-virtualization" remote="yocto" revision="9482648daf0bb42ff3475e7892542cf99f3b8d48" upstream="kirkstone"/>
+  <project name="meta-virtualization" path="external/meta-virtualization" remote="yocto" revision="33eec78a244174a13fb222982f0051113ef618a4" upstream="kirkstone"/>
 
   <!-- Qt things -->
   <project name="meta-qt5/meta-qt5" path="external/meta-qt5" remote="github" revision="5b71df60e523423b9df6793de9387f87a149ac42" upstream="kirkstone"/>
@@ -56,7 +54,7 @@
   <project name="meta-spdxscanner" path="external/meta-spdxscanner" remote="yocto" revision="25373bc58ece8b6f07680a103b4a1bbbc99e0db1" upstream="master"/>
 
   <!-- clang support -->
-  <project name="kraj/meta-clang" path="external/meta-clang" remote="github" revision="c728c3f9168c8a4ed05163a51dd48ca1ad8ac21d" upstream="kirkstone"/>
+  <project name="kraj/meta-clang" path="external/meta-clang" remote="github" revision="7952eba1d16264b605682ae1ccbea4d8c6e9fcac" upstream="kirkstone"/>
 
   <!-- meta-python2 as stop-gap to allow chromium to build until upstream fixes the dependencies -->
   <project name="meta-python2" path="external/meta-python2" remote="openembedded" revision="f02882e2aa9279ca7becca8d0cedbffe88b5a253" upstream="kirkstone" />
@@ -77,13 +75,13 @@
 
   <!-- TI Vayu / Jacinto 6 / DRA7 -->
   <project name="meta-arm" path="bsp/meta-arm" remote="yocto" revision="50b34c5cc9496441152ad28bf1022e5fc5ab0a7e" upstream="kirkstone"/>
-  <project name="meta-ti" path="bsp/meta-ti" remote="yocto" revision="2b11afa8aa19814264d1d7b97184ad5cb88ddfa0" upstream="kirkstone"/>
+  <project name="meta-ti" path="bsp/meta-ti" remote="yocto" revision="88e8c1cbf370940fae6dac4a8b732366f75173dc" upstream="master"/>
 
   <!-- Raspberry Pi 4 -->
-  <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="dacad9302a92b0b7edf8546cdcad1f8ef753e462" upstream="kirkstone"/>
+  <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="0135a02ea577bd39dd552236ead2c5894d89da1d" upstream="kirkstone"/>
 
   <!-- Sancloud BSP layers -->
-  <project name="SanCloudLtd/meta-sancloud" path="bsp/meta-sancloud" remote="github" revision="7eb9a421f547e347c9da23463734758568e13f95" upstream="kirkstone"/>
-  <project name="EmbeddedAndroid/meta-rtlwifi" path="bsp/meta-rtlwifi" remote="github" revision="032a394e7569d1254cd17a0358475b986e64a5a4" upstream="master"/>
+  <project name="SanCloudLtd/meta-sancloud" path="bsp/meta-sancloud" remote="github" revision="a34ca4c3fedfed1915ec3acc40bc8c0edd70e8a4" upstream="dunfell"/>
+  <project name="EmbeddedAndroid/meta-rtlwifi" path="bsp/meta-rtlwifi" remote="github" revision="98b2b2c34f186050e6092bc4f17ecb69aef6148a" upstream="master"/>
 
 </manifest>

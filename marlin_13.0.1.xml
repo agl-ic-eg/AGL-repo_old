@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- remote servers to query -->
+  <remote name="agl"
+         fetch="https://gerrit.automotivelinux.org/gerrit/"
+         review="https://gerrit.automotivelinux.org/gerrit/"
+         pushurl="ssh://gerrit.automotivelinux.org:29418"
+  />
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git/" />
+  <remote name="github" fetch="https://github.com/" />
+  <remote name="openembedded" fetch="https://git.openembedded.org/" />
+  <remote name="alb" fetch="https://source.codeaurora.org/external/autobsps32"/>
+  <remote name="linaro" fetch="https://git.linaro.org/openembedded"/>
+
+  <!-- defaults -->
+  <default remote="agl" sync-j="4" revision="refs/tags/marlin/13.0.1"/>
+
+
+  <!-- CORE -->
+  <!-- use agl revisions/branches here -->
+
+  <!-- AGL things. -->
+  <project name="AGL/meta-agl" path="meta-agl" />
+  <project name="AGL/meta-agl-demo" path="meta-agl-demo" />
+  <project name="AGL/meta-agl-devel" path="meta-agl-devel" />
+
+
+  <!-- ALL EXTERNAL REPOS BELOW USE A FIXED REVISION ! -->
+
+  <!-- YOCTO & OE -->
+
+  <!-- Yocto/OpenEmbedded things. -->
+  <project name="poky" path="external/poky" remote="yocto" revision="f14992950eb90dc168eb82823ab69538f668f8bc" upstream="dunfell" />
+  <project name="meta-gplv2" path="external/meta-gplv2" remote="yocto" revision="60b251c25ba87e946a0ca4cdc8d17b1cb09292ac" upstream="dunfell" />
+  <project name="openembedded/meta-openembedded" path="external/meta-openembedded" remote="github" revision="8ff12bfffcf0840d5518788a53d88d708ad3aae0" upstream="dunfell" />
+
+
+  <!-- UPSTREAM COMPONENTS -->
+
+  <!-- meta-virtualization -->
+  <project name="meta-virtualization" path="external/meta-virtualization" remote="yocto" revision="f6b88c1d2f515ffac90457c0d649d6c805fff736" upstream="dunfell"/>
+
+  <!-- Qt things -->
+  <project name="meta-qt5/meta-qt5" path="external/meta-qt5" remote="github" revision="5ef3a0ffd3324937252790266e2b2e64d33ef34f" upstream="dunfell"/>
+
+  <!-- Security layer -->
+  <project name="meta-security" path="external/meta-security" remote="yocto" revision="c62970fda82acf75035243766ecd195243e0f82a" upstream="dunfell"/>
+
+  <!-- meta-codescanner - support for using CodeScanner during the build -->
+  <project name="dl9pf/meta-codechecker" path="external/meta-codechecker" remote="github" revision="f27a46feb2291d333744850a82d5c8af303e3bd5" upstream="master"/>
+
+  <!-- meta-spdxscanner - support for fossology -->
+  <project name="meta-spdxscanner" path="external/meta-spdxscanner" remote="yocto" revision="23bba6f8dfafc806c187fc58b31fe2466d95772d" upstream="dunfell"/>
+
+  <!-- clang support -->
+  <project name="kraj/meta-clang" path="external/meta-clang" remote="github" revision="3bb001d3f364bbf6588fed04b9ee2c7e74a0beba" upstream="dunfell"/>
+
+  <!-- meta-python2 as stop-gap to allow chromium to build until upstream fixes the dependencies -->
+  <project name="meta-python2" path="external/meta-python2" remote="openembedded" revision="b901080cf57d9a7f5476ab4d96e56c30db8170a8" upstream="dunfell" />
+
+  <!-- meta-ros layer -->
+  <project name="ros/meta-ros" path="external/meta-ros" remote="github" revision="7ded597103e8e54ffa979d042cdbbedb76ff7cb5" upstream="dunfell"/>
+
+  <!-- meta-flutter -->
+  <project name="meta-flutter/meta-flutter" path="external/meta-flutter" remote="github" revision="7d59dea18a27b16b0cede7ad5143281b82dd6701" upstream="dunfell"/>
+
+  <!-- BSPs -->
+
+  <!-- Renesas Gen3 specific things -->
+  <project name="renesas-rcar/meta-renesas" path="bsp/meta-renesas" remote="github" revision="4160ddb33390fa5266635c65c5a5abbed27845f6" upstream="dunfell-dev"/>
+  <project name="CogentEmbedded/meta-rcar" path="bsp/meta-rcar" remote="github" revision="fc6201d93336a314c532e063e0abc48969b3b868" upstream="v5.9.0"/>
+  <project name="AGL/meta-agl-refhw" path="bsp/meta-agl-refhw" />
+
+  <!-- consolidate on meta-freescale from git.yoctoproject.org -->
+  <project name="meta-freescale" path="bsp/meta-freescale" remote="yocto" revision="3dbca0ef2ae1ea3862e540c59ad77adbcb419d57" upstream="dunfell"/>
+  <project name="Freescale/meta-freescale-3rdparty" path="bsp/meta-freescale-3rdparty" remote="github" revision="c52f64973cd4043a5e8be1c7e29bb9690eb4c3e5" upstream="dunfell"/>
+
+  <project name="meta-alb" path="bsp/meta-alb" remote="alb" revision="deab83e3ae9651c2fa8704ba9401c1fde5f9fae5" upstream="release/bsp32.0-3.2"/>
+  <project name="meta-linaro" path="bsp/meta-linaro" remote="linaro" revision="10af9133aeb28b3487fd227c900c11b786505699" upstream="dunfell"/>
+
+  <!-- TI Vayu / Jacinto 6 / DRA7 -->
+  <project name="meta-arm" path="bsp/meta-arm" remote="yocto" revision="5c09684863be8e803e3e987a5ce4940721c3f39a" upstream="dunfell"/>
+  <project name="meta-ti" path="bsp/meta-ti" remote="yocto" revision="15613c951051c450fc8726b2576c23c105b79d53" upstream="dunfell"/>
+
+  <!-- Raspberry Pi 3, 3B+, and 4 -->
+  <project name="meta-raspberrypi" path="bsp/meta-raspberrypi" remote="yocto" revision="934064a01903b2ba9a82be93b3f0efdb4543a0e8" upstream="dunfell"/>
+
+  <!-- DragonBoard 410c specific things -->
+  <project name="meta-qcom" path="bsp/meta-qcom" remote="yocto" revision="2778e164cd0427277e37fc03c8ed19179da1613b" upstream="dunfell"/>
+
+  <!-- Sancloud BSP layers -->
+  <project name="SanCloudLtd/meta-sancloud" path="bsp/meta-sancloud" remote="github" revision="ef68da514bd7cd4cfed75e69af1eb5c7ac11dbb9" upstream="dunfell"/>
+  <project name="EmbeddedAndroid/meta-rtlwifi" path="bsp/meta-rtlwifi" remote="github" revision="98b2b2c34f186050e6092bc4f17ecb69aef6148a" upstream="master"/>
+
+  <!-- meta-synopsys - support for ARC HSDK board -->
+  <project name="foss-for-synopsys-dwc-arc-processors/meta-synopsys" path="bsp/meta-synopsys" remote="github" revision="80656bf6551b2056c8cb02a74510e595e2553048" upstream="dunfell-agl"/>
+
+</manifest>
